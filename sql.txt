@@ -1,0 +1,38 @@
+select * from user 
+
+create table user(
+	id varchar(20) NOT NULL primary key,
+    pw varchar(20) NOT NULL,
+    email varchar(50) NOT NULL
+);
+
+create table article(
+	num int NOT NULL auto_increment primary key,
+	uid varchar(20) NOT NULL,
+    title varchar(200) NOT NULL,
+    time varchar(20) NOT NULL,
+    content text,
+    count int NOT NULL
+);
+
+insert into user values(1234,1234,"1234@1234");
+
+insert into article values(null,1234,"test1","2018/12/01 12:00:00","test1",0);
+insert into article values(null,1234,"test2","2018/12/01 12:00:00","test2",0);
+insert into article values(null,1234,"test3","2018/12/01 12:00:00","test3",0);
+insert into article values(null,1234,"test4","2018/12/01 12:00:00","test4",0);
+insert into article values(null,1234,"test5","2018/12/01 12:00:00","test5",0);
+insert into article values(null,1234,"test6","2018/12/01 12:00:00","test6",0);
+insert into article values(null,1234,"test7","2018/12/01 12:00:00","test7",0);
+insert into article values(null,1234,"test8","2018/12/01 12:00:00","test8",0);
+insert into article values(null,1234,"test9","2018/12/01 12:00:00","test9",0);
+insert into article values(null,1234,"test10","2018/12/01 12:00:00","test10",0);
+insert into article values(null,1234,"test11","2018/12/01 12:00:00","test11",0);
+insert into article values(null,1234,"test12","2018/12/01 12:00:00","test12",0);
+insert into article values(null,1234,"test13","2018/12/01 12:00:00","test13",0);
+insert into article values(null,1234,"test14","2018/12/01 12:00:00","test14",0);
+insert into article values(null,1234,"test15","2018/12/01 12:00:00","test15",0);
+
+drop table article;
+drop table user;
+select * from article order by num desc limit 1, 10;
