@@ -8,3 +8,5 @@
 * MySQL 연동
 * 로그인, 로그아웃
 * 회원정보 수정
+
+[image](./readme.png)
